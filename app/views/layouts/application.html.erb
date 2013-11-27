@@ -7,19 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="header">
-<img src="/assets/starbucks.jpeg" style="width:100px;"/> 
-<%= link_to "About us", main_about_us_path %>
-<%= link_to "privacy", main_privacy_path %>
-<%= link_to "Terms of service", main_tos_path %>
-<%= link_to "FAQ", main_faq_path %>
-<%= link_to "Blogs", blogs_path %>
-</div>
+	<div class="main">
+		<div class="header">
+			<span class="logo">
+				<img src="/assets/starbucks.jpeg" style="width:100px;"/>
+			</span>
+			<div class="menu">
+			<%= link_to "About us", main_about_us_path %>
+			<%= link_to "privacy", main_privacy_path %>
+			<%= link_to "Terms of service", main_tos_path %>
+			<%= link_to "FAQ", main_faq_path %>
+			<%= link_to "Blogs", blogs_path %>
+		</div>
 
-<div class="content">
-<%= yield %>
-</div>
+		<div class="content">
+			<%= yield %>
+		</div>
 
-<div class="footer">© 2013 NT, Inc. All Rights Reserved. </div>
+		<div class="footer">© 2013 NT, Inc. All Rights Reserved. </div>
+</div>
 </body>
 </html>

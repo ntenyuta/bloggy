@@ -1,45 +1,71 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
-body
+html, body
 {
 
 	font-family: Calibri;
-}
 
-.header a 
+	border: 1px red solid;
+	margin: 0px;
+	padding: 0px;
+  color: #ffffff;
+	background-color: #282132;
+	width: 1200px;
+}
+div
+{display: block;
+}
+a { color: #fff; }
+a:visited { color: #fff; }
+a:hover { color: #fff;  }
+
+.main
 {
-	color: white;
+	background: url("/assets/bg.png");
+	background-position: top;
+	min-height: 800px;
+
+	background-repeat: no-repeat;
 }
-
-
 .header
 {
+margin: 0 350 0 350px;
+border: 1px red solid;
+height: 115px;
 
-	padding:20px;
-	background-color: black;
+}
+.header a 
+{
 	
 }
+.logo {
+float: left;
+margin: 0 0 0 50px;
 
+}
+.menu {
+float: right;
+border: 1px red solid;
+height: 40px;
+margin: 0 50px 0 0px;
+}
+.menu a
+{padding: 0	 0 0 20px;}
 .footer
 {
-	padding:20px;
-	background-color: black;
-	color: white;
-	text-align: center;
-
+	float: left;
+	width: 1000px;
+	margin: 50px;
 }
 .content{
+	margin: 150px 50px 50px 50px;
 
-	margin: 30px;
 }
+.title
+{
+	height: 313px;
+	border: 1px red solid;
+	margin: 170px 50px 0 50px;
+}
+.slaider
+{height: 300px;
+border: 1px red solid;
+margin: 50px;}

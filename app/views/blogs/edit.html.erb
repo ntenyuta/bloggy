@@ -1,6 +1,18 @@
 <h1>Edit blog</h1>
-
+<div style="float:left; border: 1px red solid">
 <%= render 'form' %>
+</div>
 
+<div style="float:right; border: 1px red solid">
+<h3> Add tags</h3>
+<%= render 'tags/form' %>
+<hr/>
+<h4>Associated Tags <%= @blog.tags.count %> </h4>
+	<% @blog.tags.each do |tag| %>
+	<%= tag.name %> <br/>
+	<% end %>
+</div>
+
+<div style="clear:both; border: 1px red solid"></div>
 <%= link_to 'Show', @blog %> |
 <%= link_to 'Back', blogs_path %>
